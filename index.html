@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- Font Awesome for Icons -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    
+    <!-- Link to Custom CSS for the First Carousel -->
+    <link rel="stylesheet" href="carousel1.css">
+    
+    <!-- Link to Custom CSS for the Second Carousel -->
+    <link rel="stylesheet" href="carousel2.css">
+    <link rel="stylesheet" href="carousel3.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="FooterStyle.css">
+    <link rel="stylesheet" href="CompanyInfoSection_Style.css">
+    <link rel="stylesheet" href="ExperienceSection_Style.css">
+    <link rel="stylesheet" href="NavigationBar_Style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Game Page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Art Page</a>
+                    </li>
+<!--                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li> -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Company Information Section Above Carousel -->
+<section class="company-info py-5">
+    <div class="container text-center">
+        <h1 class="display-4">Welcome to My Portfolio</h1>
+        <p class="lead">I'm a passionate and skilled developer with expertise in game development. Let's create something amazing together!</p>
+<!--        <div class="row">
+            <div class="col-md-6">
+                <h4>About Me</h4>
+                <p>Hi, I'm Ankush Dhiman, a developer with a love for building innovative and interactive applications. With a solid foundation in software development, I specialize in:</p>
+                <ul class="list-unstyled">
+                    <li><strong>C & C++</strong>: Expert in system-level programming, including performance optimization and game development.</li>
+                    <li><strong>Java</strong>: Experienced in building robust web applications and mobile apps for Android.</li>
+                    <li><strong>Unity (2D & 3D)</strong>: Skilled in developing engaging 2D and 3D games for multiple platforms.</li>
+                    <li><strong>Unreal Engine</strong>: Proficient in creating high-fidelity 3D games with complex environments and gameplay mechanics.</li>
+                    <li><strong>3D Modeling</strong>: Ability to design and create realistic 3D models and environments for game assets.</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h4>Mission</h4>
+                <p>My mission is to deliver top-notch software and game development services that bring innovative ideas to life. I aim to create solutions that not only meet but exceed your expectations, whether it's through crafting immersive games or developing high-performance applications. I'm committed to collaborating closely with clients to ensure each project is a success and aligns with their vision.</p>
+            </div>
+        </div>-->
+    </div>
+</section>
+
+
+    <!-- First Carousel Section -->
+    <div id="carouselExampleIndicators" class="carousel slide carousel-custom" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+    </ol>
+    <div class="carousel-inner">
+        <!-- First video -->
+				<div class="carousel-item active">
+            <div class="video-container">
+                <video class="d-block w-100" autoplay muted loop>
+                    <source src="videos/TopDownRPG.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+				
+				<div class="carousel-caption d-none d-md-block">
+                    <h5>Top Down RPG</h5>
+                    <p>Experience an amazing top-down RPG adventure.</p>
+                </div>
+            </div>
+        </div>
+		<div class="carousel-item">
+            <div class="video-container">
+                <video class="d-block w-100" autoplay muted loop>
+                    <source src="videos/ZombieCity(WaveSystem).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+				
+				<div class="carousel-caption d-none d-md-block">
+                    <h5>Zombie City</h5>
+                    <p>Survive the zombie apocalypse with intense gameplay.</p>
+				</div>	
+            </div>
+					
+        </div>        
+		<div class="carousel-item">
+            <div class="video-container">
+                <video class="d-block w-100" autoplay muted loop>
+                    <source src="videos/RPGSnowGame.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            
+			    <div class="carousel-caption d-none d-md-block">
+					<h5>RPG Snow Game</h5>
+					<p>A thrilling RPG experience set in a snow-covered world.</p>
+				</div>
+				
+			</div>
+						
+        </div>		
+		<div class="carousel-item">
+            <div class="video-container">
+                <video class="d-block w-100" autoplay muted loop>
+                    <source src="videos/Games.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+				
+				<div class="carousel-caption d-none d-md-block">
+                    <h5>Games Showcase</h5>
+                    <p>Check out our exciting game development projects.</p>
+                </div>
+            </div>
+        </div>         
+		<div class="carousel-item">
+            <div class="video-container">
+                <video class="d-block w-100" autoplay muted loop>
+                    <source src="videos/Trader.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+				
+				<div class="carousel-caption d-none d-md-block">
+                    <h5>Trader Game Showcase</h5>
+                    <p>Check out our exciting game in which you have to save people fromthe jungle.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Second video -->
+        <div class="carousel-item">
+            <div class="video-container">
+                <video class="d-block w-100" autoplay muted loop>
+                    <source src="videos/OfficeMetaverse.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+				
+				<div class="carousel-caption d-none d-md-block">
+                    <h5>Office Metaverse Showcase</h5>
+                    <p>Check out our exciting office metaverse project.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Third video -->
+        <div class="carousel-item">
+            <div class="video-container">
+                <video class="d-block w-100" autoplay muted loop>
+                    <source src="videos/HorrorGame.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+				
+				<div class="carousel-caption d-none d-md-block">
+                    <h5>Horror Game Showcase</h5>
+                    <p>Check out our exciting Horror game project.</p>
+                </div>
+				
+            </div>
+        </div>        
+		<div class="carousel-item">
+            <div class="video-container">
+                <video class="d-block w-100" autoplay muted loop>
+                    <source src="videos/MultiplayerMetaroominUE5.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+				
+				<div class="carousel-caption d-none d-md-block">
+                    <h5>Multiplayer metaverse Showcase</h5>
+                    <p>Check out our exciting multiplayer metaverse project.</p>
+                </div>
+            </div>
+        </div>		
+		<div class="carousel-item">
+            <div class="video-container">
+                <video class="d-block w-100" autoplay muted loop>
+                    <source src="videos/NFTTokenBuyingGameDemo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+
+				<div class="carousel-caption d-none d-md-block">
+                    <h5>Multiplayer metaverse Showcase</h5>
+                    <p>Check out our exciting multiplayer metaverse project.</p>
+                </div>
+
+            </div>
+        </div>		
+		<div class="carousel-item">
+            <div class="video-container">
+                <video class="d-block w-100" autoplay muted loop>
+                    <source src="videos/PinballGame.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+				
+				<div class="carousel-caption d-none d-md-block">
+                    <h5>Pinball Game Showcase</h5>
+                    <p>Check out our exciting Pinball game project.</p>
+                </div>
+				
+            </div>
+        </div>
+    </div>
+    <!-- Carousel controls -->
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+
+    <!-- Experience Section (Centered) -->
+    <section class="experience-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>Our Experience</h2>
+                    <p>With over 5 years of expertise, we are skilled in delivering high-quality web development solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Container Section Divided into Left and Right -->
+    <section class="container-section">
+        <div class="container">
+            <div class="row">
+                <!-- Left Side (2x2 Grid) -->
+                <div class="col-md-6 left-side">
+                    <div class="grid-container">
+                        <div class="row">
+                            <div class="col-md-6 grid-item">
+                                <img src="images/Unity.png" alt="Image 1" class="img-fluid">
+                            </div>
+                            <div class="col-md-6 grid-item">
+                                <img src="images/UE.png" alt="Image 2" class="img-fluid">
+                            </div>
+                            <div class="col-md-6 grid-item">
+                                <img src="images/blender.png" alt="Image 3" class="img-fluid">
+                            </div>
+                            <div class="col-md-6 grid-item">
+                                <img src="images/maya.png" alt="Image 4" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side (Single Image) -->
+                <div class="col-md-6 right-side">
+                    <img src="images/Game.png" alt="Right Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	
+	<!-- New Carousel Section (Three Images at a Time) -->
+<section class="carousel-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Mobile Game Projects</h2>
+        <div id="carouselThreeImages" class="carousel slide carousel-three-images" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="carousel-image-container">
+                                <img src="images/LineRunnerTwo.png" class="d-block w-100" alt="Product 1">
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="carousel-image-container">
+                                <img src="images/LineRunnerOne.png" class="d-block w-100" alt="Product 2">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="carousel-image-container">
+                                <img src="images/LineRunnerThree.png" class="d-block w-100" alt="Product 3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="carousel-image-container">
+                                <img src="images/BulletOne.png" class="d-block w-100" alt="Product 4">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="carousel-image-container">
+                                <img src="images/BulletTwo.png" class="d-block w-100" alt="Product 5">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="carousel-image-container">
+                                <img src="images/BulletThree.png" class="d-block w-100" alt="Product 6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselThreeImages" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselThreeImages" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- 2x2 Image Grid Section -->
+<section class="image-grid-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Chess Game</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="image-grid-item">
+                    <img src="images/chessOne.png" class="img-fluid" alt="Image 1">
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="image-grid-item">
+                    <img src="images/chessTwo.png" class="img-fluid" alt="Image 2">
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="image-grid-item">
+                    <img src="images/chessThree.png" class="img-fluid" alt="Image 3">
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="image-grid-item">
+                    <img src="images/chessFour.png" class="img-fluid" alt="Image 4">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="image-grid-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Plane Runner Game</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="image-grid-item">
+                    <img src="images/PlaneOne.png" class="img-fluid" alt="Image 1">
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="image-grid-item">
+                    <img src="images/PlaneTwo.png" class="img-fluid" alt="Image 2">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Footer Section -->
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Left Side: Logo -->
+            <div class="col-md-6 text-left">
+                <a href="#" class="navbar-brand text-white">
+                    <img src="images/image1.jpeg" alt="Logo" style="max-width: 150px;">
+                </a>
+            </div>
+            <!-- Right Side: Social Media Links -->
+            <div class="col-md-6 text-right">
+                <a href="#" class="text-white mx-2">
+                    <i class="fab fa-facebook"></i> <!-- Facebook Icon -->
+                </a>
+                <a href="#" class="text-white mx-2">
+                    <i class="fab fa-twitter"></i> <!-- Twitter Icon -->
+                </a>
+                <a href="#" class="text-white mx-2">
+                    <i class="fab fa-linkedin"></i> <!-- LinkedIn Icon -->
+                </a>
+                <a href="#" class="text-white mx-2">
+                    <i class="fab fa-instagram"></i> <!-- Instagram Icon -->
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center mt-3">
+                <p>&copy; 2025 MyCompany. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	
+	
+	<script>
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();  // Disable right-click menu
+        });
+    </script>
+</body>
+</html>

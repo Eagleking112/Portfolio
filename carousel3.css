@@ -1,0 +1,37 @@
+/* image-grid.css */
+
+/* Styling for the 2x2 Image Grid Section */
+.image-grid-section {
+    background-color: #0B161C;
+	color: white;
+}
+
+.image-grid-section h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.image-grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.image-grid-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    border-radius: 8px;
+}
+
+/* Hover effect on images */
+.image-grid-item:hover img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+    .image-grid-item img {
+        border-radius: 4px;
+    }
+}

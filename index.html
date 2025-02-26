@@ -442,6 +442,20 @@
         document.addEventListener('contextmenu', function(e) {
             e.preventDefault();  // Disable right-click menu
         });
+		
+		
+		document.onkeydown = (e) => {
+			if (event.keyCode === 123 || // F12
+			  ctrlShiftKey(e, 'I') || // Ctrl + Shift + I
+			  ctrlShiftKey(e, 'J') || // Ctrl + Shift + J
+			  ctrlShiftKey(e, 'C') || // Ctrl + Shift + C
+			  (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))) // Ctrl + U
+			return false;
+		};
+
+		function ctrlShiftKey(e, keyCode) {
+		  return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+		}
     </script>
 </body>
 </html>

@@ -1,443 +1,913 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-	
-	<!-- Font Awesome for Icons -->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - EagleGameHub</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    
-    <!-- Link to Custom CSS for the First Carousel -->
-    <link rel="stylesheet" href="carousel1.css">
-    
-    <!-- Link to Custom CSS for the Second Carousel -->
-    <link rel="stylesheet" href="carousel2.css">
-    <link rel="stylesheet" href="carousel3.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="FooterStyle.css">
-    <link rel="stylesheet" href="CompanyInfoSection_Style.css">
-    <link rel="stylesheet" href="ExperienceSection_Style.css">
-    <link rel="stylesheet" href="NavigationBar_Style.css">
+  <!-- Favicons -->
+  <link href="assets/img/Logo.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 </head>
-<body>
 
-    <!-- Header Section -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Portfolio</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Game Page</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Art Page</a>
-                    </li>
-<!--                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li> -->
-                </ul>
-            </div>
-        </nav>
-    </header>
+<body class="index-page">
 
-    <!-- Company Information Section Above Carousel -->
-<section class="company-info py-5">
-    <div class="container text-center">
-        <h1 class="display-4">Welcome to My Portfolio</h1>
-        <p class="lead">I'm a passionate and skilled developer with expertise in game development. Let's create something amazing together!</p>
-<!--        <div class="row">
-            <div class="col-md-6">
-                <h4>About Me</h4>
-                <p>Hi, I'm Ankush Dhiman, a developer with a love for building innovative and interactive applications. With a solid foundation in software development, I specialize in:</p>
-                <ul class="list-unstyled">
-                    <li><strong>C & C++</strong>: Expert in system-level programming, including performance optimization and game development.</li>
-                    <li><strong>Java</strong>: Experienced in building robust web applications and mobile apps for Android.</li>
-                    <li><strong>Unity (2D & 3D)</strong>: Skilled in developing engaging 2D and 3D games for multiple platforms.</li>
-                    <li><strong>Unreal Engine</strong>: Proficient in creating high-fidelity 3D games with complex environments and gameplay mechanics.</li>
-                    <li><strong>3D Modeling</strong>: Ability to design and create realistic 3D models and environments for game assets.</li>
-                </ul>
-            </div>
-            <div class="col-md-6">
-                <h4>Mission</h4>
-                <p>My mission is to deliver top-notch software and game development services that bring innovative ideas to life. I aim to create solutions that not only meet but exceed your expectations, whether it's through crafting immersive games or developing high-performance applications. I'm committed to collaborating closely with clients to ensure each project is a success and aligns with their vision.</p>
-            </div>
-        </div>-->
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/Logo.png" alt="" class="img-fluid rounded-circle">
     </div>
-</section>
 
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Ankush Dhiman</h1>
+    </a>
 
-    <!-- First Carousel Section -->
-    <div id="carouselExampleIndicators" class="carousel slide carousel-custom" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
-    </ol>
-    <div class="carousel-inner">
-        <!-- First video -->
-				<div class="carousel-item active">
-            <div class="video-container">
-                <video class="d-block w-100" autoplay muted loop>
-                    <source src="videos/TopDownRPG.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-				
-				<div class="carousel-caption d-none d-md-block">
-                    <h5>Top Down RPG</h5>
-                    <p>Experience an amazing top-down RPG adventure.</p>
-                </div>
+    <div class="social-links text-center">
+      <!-- <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a> -->
+      <!-- <a href="#" class="facebook"><i class="bi bi-facebook"></i></a> -->
+      <a href="https://www.instagram.com/ankushdhiamn.gamedev?igsh=MWZuZzAxbHVidGh1ag%3D%3D&utm_source=qr" class="instagram"><i class="bi bi-instagram"></i></a>
+      <!-- <a href="#" class="google-plus"><i class="bi bi-skype"></i></a> -->
+      <a href="https://www.linkedin.com/in/ankush-dhiman-94b825169/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+        <!-- <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="#">Dropdown 1</a></li>
+            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Deep Dropdown 1</a></li>
+                <li><a href="#">Deep Dropdown 2</a></li>
+                <li><a href="#">Deep Dropdown 3</a></li>
+                <li><a href="#">Deep Dropdown 4</a></li>
+                <li><a href="#">Deep Dropdown 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Dropdown 2</a></li>
+            <li><a href="#">Dropdown 3</a></li>
+            <li><a href="#">Dropdown 4</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li> -->
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/bg.jpg" alt="" data-aos="fade-in" class="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="70">
+        <h2>Eagle Game Hub</h2>
+        <p>We are working as a <span class="typed" data-typed-items="Indie Game Developer, Freelancer, Unity 2d/3d Game developer, Unreal Engine Game developer, 3d Artist [Blender]">Indie Game Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>I am a game developer with 5+ years of experience specializing in Unity3D & Unreal Engine. Skilled in RPGs, shooting games, multiplayer, and cross-platform development. Expertise in mobile game development, game mechanics, and multiplayer integration. Committed to delivering high-quality, client-focused solutions with a strong emphasis on performance and user satisfaction.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/MyProfileImg.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Indie Game developer &amp; Unity 2d/3d And Unreal Engine Game developer.</h2>
+            <!-- <p class="fst-italic py-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p> -->
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 Dec 1998</span></li>
+                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li> -->
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 9896301549</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Yamunanagar, India</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Job:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>27</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>MCA</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>itskush.112@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
             </div>
+            <!-- <p class="py-3">
+              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
+              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque.
+            </p> -->
+          </div>
         </div>
-		<div class="carousel-item">
-            <div class="video-container">
-                <video class="d-block w-100" autoplay muted loop>
-                    <source src="videos/ZombieCity(WaveSystem).mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-				
-				<div class="carousel-caption d-none d-md-block">
-                    <h5>Zombie City</h5>
-                    <p>Survive the zombie apocalypse with intense gameplay.</p>
-				</div>	
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Happy Clients</strong></p>
             </div>
-					
-        </div>        
-		<div class="carousel-item">
-            <div class="video-container">
-                <video class="d-block w-100" autoplay muted loop>
-                    <source src="videos/RPGSnowGame.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Projects</strong></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hours Of Support</strong></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Team</strong></p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>Unity 2d/3d</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Unreal Engine</span> <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Blender</span> <i class="val">50%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>Photoshop</span> <i class="val">50%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>WordPress/CMS</span> <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>NodeJs</span> <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Sumary</h3>
+
+            <div class="resume-item pb-0">
+              <h4><b>Ankush Dhiman</b></h4>
+              <p><em>I am a game developer with 5+ years of experience specializing in Unity3D & Unreal Engine. Skilled in RPGs, shooting games, multiplayer, and cross-platform development. Expertise in mobile game development, game mechanics, and multiplayer integration. Committed to delivering high-quality, client-focused solutions with a strong emphasis on performance and user satisfaction.</em></p>
+              <ul>
+                <li>#1137 Peer baba road, jawahar nagar, YNR, India</li>
+                <li>+91-9896301549</li>
+                <li>ankush.d112@gmail.com</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Master in Computer Application &amp; Graphic Design</h4>
+              <h5>2019 - 2021</h5>
+              <p><em>Kurukshetra University</em></p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Bachelor in Computer Application</h4>
+              <h5>2016 - 2019</h5>
+              <p><em>Kurukshetra University</em></p>
+            </div><!-- Edn Resume Item -->
+			
+			<h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Unity 2d/3d & Unreal Engine Game developer</h4>
+              <h5>DEC 2023 - DEC 2024</h5>
+              <p><em>Apptunix,  Mohali </em></p>
+              <ul>
+                <li>Working Experience: </li>
+                <li>I had worked on multiplayer games And Metaverse type projects.</li>
+                <li><b>Plugin:</b> Mirror, Netcode, Photon, Agora.io, Realtime Firebase database, Facebook Audience, Google Ads, In App Purchase, etc.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Unity 2d/3d & Unreal Engine Game developer</h4>
+              <h5>MAY 2022 - OCT 2023</h5>
+              <p><em>Antier Solutions,  Mohali </em></p>
+              <ul>
+                <li>Working Experience: </li>
+                <li>I had worked on RPG games, Shooting, Endless Runner, Casual, multiplayer games And Metaverse type projects.</li>
+                <li><b>Plugin:</b> Mirror, Netcode, Photon, Agora.io, Realtime Firebase database, Facebook Audience, Google Ads, In App Purchase, etc.</li>
+                <li><b>Plugin:</b> EOS/Steam/Local multiplayer setup, Pixel streaming multiplayer setup</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Unity 2d/3d & Unreal Engine Game developer</h4>
+              <h5>JUNE 2021 - MAY 2022</h5>
+              <p><em>AppMechanic,  Mohali </em></p>
+              <ul>
+                <li>Working Experience: </li>
+                <li>I had worked on AR/VR games, multiplayer games And Metaverse type projects.</li>
+                <li><b>Plugin:</b> Mirror, Netcode, Photon, Agora.io, Realtime Firebase database, Facebook Audience, Google Ads, In App Purchase, Vuforia, AR foundation etc.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->            
+			
+			
+			<div class="resume-item">
+              <h4>Unity 2d /3d & Unreal Engine Game developer</h4>
+              <h5>MAY 2020 - MAY 2021</h5>
+              <p><em>Game App Studio,  Mohali</em></p>
+              <ul>
+                <li>Working Experience: </li>
+                <li>I had worked on multiplayer games And Metaverse type projects.</li>
+                <li><b>Plugin:</b> Mirror, Netcode, Photon, Agora.io, Realtime Firebase database, Facebook Audience, Google Ads, In App Purchase, etc.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">Games</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/6.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Game </h4>
+                  <p>Zombie Shooting Game</p>
+                  <a href="assets/img/portfolio/6.png" title="Zombie shooting Game" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->            
+			
+			<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/7.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Game </h4>
+                  <p>Zombie Shooting Game</p>
+                  <a href="assets/img/portfolio/7.png" title="Zombie shooting Game" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+				  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->            
+			
+			<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/3.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Game </h4>
+                  <p>Zombie Shooting Game</p>
+                  <a href="assets/img/portfolio/3.png" title="Zombie shooting Game" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+				  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->			
+			
+			<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/9.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Game </h4>
+                  <p>Car Game</p>
+                  <a href="assets/img/portfolio/9.png" title="Car Game" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+				  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->			
+			
+			<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/10.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Game </h4>
+                  <p>Car Game</p>
+                  <a href="assets/img/portfolio/10.png" title="Car Game" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->			
+			
+			<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/11.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Game </h4>
+                  <p>Car Game</p>
+                  <a href="assets/img/portfolio/11.png" title="Car Game" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->			
+			
+			<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/14.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Game </h4>
+                  <p>RPG Fire Hand Game</p>
+                  <a href="assets/img/portfolio/14.png" title="RPG Fire Hand Game" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->			
+			
+			<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/15.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Game </h4>
+                  <p>RPG Fire Hand Game</p>
+                  <a href="assets/img/portfolio/15.png" title="RPG Fire Hand Game" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->			
+			
+			<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/16.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Game </h4>
+                  <p>RPG Fire Hand Game</p>
+                  <a href="assets/img/portfolio/16.png" title="RPG Fire Hand Game" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->			
+			
+			<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/19.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Game </h4>
+                  <p>RPG Snow Game</p>
+                  <a href="assets/img/portfolio/19.png" title="RPG Snow Gamee" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->			
+			
+			<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/20.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Game </h4>
+                  <p>RPG Snow Gamee</p>
+                  <a href="assets/img/portfolio/20.png" title="RPG Snow Game" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->			
+			
+			<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/21.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Game </h4>
+                  <p>RPG Snow Game</p>
+                  <a href="assets/img/portfolio/21.png" title="RPG Snow Game" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->			
+			
+			<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/23.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Game </h4>
+                  <p>Pinball Game</p>
+                  <a href="assets/img/portfolio/23.png" title="Pinball Game" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->			
+			
+			<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/25.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Metaverse</h4>
+                  <p>Office Metaverse</p>
+                  <a href="assets/img/portfolio/25.png" title="Office Metaverse" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->			
+			
+			<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/27.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Metaverse</h4>
+                  <p>NFT Metaverse</p>
+                  <a href="assets/img/portfolio/27.png" title="NFT Metaverse" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->			
+			
+			<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/28.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Metaverse</h4>
+                  <p>Multiplayer Office Metaverse</p>
+                  <a href="assets/img/portfolio/28.png" title="Multiplayer Office Metaverse" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->			
+			
+			<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/29.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Metaverse</h4>
+                  <p>Multiplayer Office Metaverse</p>
+                  <a href="assets/img/portfolio/29.png" title="Multiplayer Office Metaverse" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->			
+			
+			<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/36.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Metaverse</h4>
+                  <p>Multiplayer Office Metaverse</p>
+                  <a href="assets/img/portfolio/36.png" title="Multiplayer Office Metaverse" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->			
+			
+			<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/39.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Game</h4>
+                  <p>Gost Survial Game</p>
+                  <a href="assets/img/portfolio/39.png" title="Gost Survial Game" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->			
+			
+			<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/40.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Game</h4>
+                  <p>Gost Survial Game</p>
+                  <a href="assets/img/portfolio/40.png" title="Gost Survial Game" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->			
+			
+			<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/41.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Game</h4>
+                  <p>Block Breaker</p>
+                  <a href="assets/img/portfolio/41.png" title="Multiplayer Office Metaverse" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->			
+			
+			<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/42.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Game</h4>
+                  <p>Space Shooter</p>
+                  <a href="assets/img/portfolio/42.png" title="Space Shooter" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->			
+			
+			<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/44.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Game</h4>
+                  <p>Glitch Garden</p>
+                  <a href="assets/img/portfolio/44.png" title="Glitch Garden" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->			
+			
+			<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/48.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Game</h4>
+                  <p>Survival Jungle</p>
+                  <a href="assets/img/portfolio/48.png" title="Survival Jungle" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->			
+			
+			<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/52.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Game</h4>
+                  <p>Space Fight</p>
+                  <a href="assets/img/portfolio/52.png" title="Space Fight" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->			
+			
+			<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/57.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Game</h4>
+                  <p>Mission Jungle</p>
+                  <a href="assets/img/portfolio/57.png" title="Mission Jungle" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->			
+			
+			<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/59.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Game</h4>
+                  <p>Mission Jungle</p>
+                  <a href="assets/img/portfolio/59.png" title="Mission Jungle" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->			
+			
+			<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/61.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Game</h4>
+                  <p>Chess</p>
+                  <a href="assets/img/portfolio/61.png" title="Chess" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->			
+			
+			<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/62.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Game</h4>
+                  <p>Chess</p>
+                  <a href="assets/img/portfolio/62.png" title="Chess" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->			
+			
+			
+			<div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/63.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Game</h4>
+                  <p>Chess</p>
+                  <a href="assets/img/portfolio/63.png" title="Chess" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <!-- <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
             
-			    <div class="carousel-caption d-none d-md-block">
-					<h5>RPG Snow Game</h5>
-					<p>A thrilling RPG experience set in a snow-covered world.</p>
-				</div>
-				
-			</div>
-						
-        </div>		
-		<div class="carousel-item">
-            <div class="video-container">
-                <video class="d-block w-100" autoplay muted loop>
-                    <source src="videos/Games.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-				
-				<div class="carousel-caption d-none d-md-block">
-                    <h5>Games Showcase</h5>
-                    <p>Check out our exciting game development projects.</p>
-                </div>
-            </div>
-        </div>         
-		<div class="carousel-item">
-            <div class="video-container">
-                <video class="d-block w-100" autoplay muted loop>
-                    <source src="videos/Trader.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-				
-				<div class="carousel-caption d-none d-md-block">
-                    <h5>Trader Game Showcase</h5>
-                    <p>Check out our exciting game in which you have to save people fromthe jungle.</p>
-                </div>
-            </div>
+
+          </div><!-- End Portfolio Container -->
+
         </div>
-        <!-- Second video -->
-        <div class="carousel-item">
-            <div class="video-container">
-                <video class="d-block w-100" autoplay muted loop>
-                    <source src="videos/OfficeMetaverse.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-				
-				<div class="carousel-caption d-none d-md-block">
-                    <h5>Office Metaverse Showcase</h5>
-                    <p>Check out our exciting office metaverse project.</p>
-                </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+            <div>
+              <h4 class="title">
+					<!-- <a href="service-details.html" class="stretched-link">Lorem Ipsum</a> -->
+					Unity 2d/3d Game Development
+			  </h4>
+				<p class="description">
+				We are working on Mobile Game development [ Android, IOS], PC Game development, WebGL Game development, Metaverse.
+				</p>
             </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+            <div>
+              <h4 class="title">
+					<!-- <a href="service-details.html" class="stretched-link">Lorem Ipsum</a> -->
+					Unreal Engine Game Development
+			  </h4>
+				<p class="description">
+				We are working on Mobile Game development [ Android, IOS], PC Game development, Metaverse.
+				</p> 
+            </div>
+          </div>
+          <!-- End Service Item -->
+
         </div>
-        <!-- Third video -->
-        <div class="carousel-item">
-            <div class="video-container">
-                <video class="d-block w-100" autoplay muted loop>
-                    <source src="videos/HorrorGame.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-				
-				<div class="carousel-caption d-none d-md-block">
-                    <h5>Horror Game Showcase</h5>
-                    <p>Check out our exciting Horror game project.</p>
-                </div>
-				
-            </div>
-        </div>        
-		<div class="carousel-item">
-            <div class="video-container">
-                <video class="d-block w-100" autoplay muted loop>
-                    <source src="videos/MultiplayerMetaroominUE5.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-				
-				<div class="carousel-caption d-none d-md-block">
-                    <h5>Multiplayer metaverse Showcase</h5>
-                    <p>Check out our exciting multiplayer metaverse project.</p>
-                </div>
-            </div>
-        </div>		
-		<div class="carousel-item">
-            <div class="video-container">
-                <video class="d-block w-100" autoplay muted loop>
-                    <source src="videos/NFTTokenBuyingGameDemo.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
 
-				<div class="carousel-caption d-none d-md-block">
-                    <h5>Multiplayer metaverse Showcase</h5>
-                    <p>Check out our exciting multiplayer metaverse project.</p>
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>Yamunanagar, Haryana, India</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>+91-9896301549</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>itskush.112@gmail.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
                 </div>
 
-            </div>
-        </div>		
-		<div class="carousel-item">
-            <div class="video-container">
-                <video class="d-block w-100" autoplay muted loop>
-                    <source src="videos/PinballGame.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-				
-				<div class="carousel-caption d-none d-md-block">
-                    <h5>Pinball Game Showcase</h5>
-                    <p>Check out our exciting Pinball game project.</p>
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
                 </div>
-				
-            </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
         </div>
-    </div>
-    <!-- Carousel controls -->
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
 
+      </div>
 
+    </section><!-- /Contact Section -->
 
-    <!-- Experience Section (Centered) -->
-    <section class="experience-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h2>Our Experience</h2>
-                    <p>With over 5 years of expertise, we are skilled in delivering high-quality web development solutions.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  </main>
 
-    <!-- Container Section Divided into Left and Right -->
-    <section class="container-section">
-        <div class="container">
-            <div class="row">
-                <!-- Left Side (2x2 Grid) -->
-                <div class="col-md-6 left-side">
-                    <div class="grid-container">
-                        <div class="row">
-                            <div class="col-md-6 grid-item">
-                                <img src="images/Unity.png" alt="Image 1" class="img-fluid">
-                            </div>
-                            <div class="col-md-6 grid-item">
-                                <img src="images/UE.png" alt="Image 2" class="img-fluid">
-                            </div>
-                            <div class="col-md-6 grid-item">
-                                <img src="images/blender.png" alt="Image 3" class="img-fluid">
-                            </div>
-                            <div class="col-md-6 grid-item">
-                                <img src="images/maya.png" alt="Image 4" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <footer id="footer" class="footer position-relative light-background">
 
-                <!-- Right Side (Single Image) -->
-                <div class="col-md-6 right-side">
-                    <img src="images/Game.png" alt="Right Image" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </section>
-	
-	
-	<!-- New Carousel Section (Three Images at a Time) -->
-<section class="carousel-section py-5">
     <div class="container">
-        <h2 class="text-center mb-4">Mobile Game Projects</h2>
-        <div id="carouselThreeImages" class="carousel slide carousel-three-images" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="carousel-image-container">
-                                <img src="images/LineRunnerTwo.png" class="d-block w-100" alt="Product 1">
-                                
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="carousel-image-container">
-                                <img src="images/LineRunnerOne.png" class="d-block w-100" alt="Product 2">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="carousel-image-container">
-                                <img src="images/LineRunnerThree.png" class="d-block w-100" alt="Product 3">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="carousel-image-container">
-                                <img src="images/BulletOne.png" class="d-block w-100" alt="Product 4">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="carousel-image-container">
-                                <img src="images/BulletTwo.png" class="d-block w-100" alt="Product 5">
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="carousel-image-container">
-                                <img src="images/BulletThree.png" class="d-block w-100" alt="Product 6">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselThreeImages" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselThreeImages" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span>© 2025 by<strong class="px-1 sitename">Ankush Dhiman</strong> <span>All Rights Reserved</span></p>
+      </div>
     </div>
-</section>
 
+  </footer>
 
-<!-- 2x2 Image Grid Section -->
-<section class="image-grid-section py-5">
-    <div class="container">
-        <h2 class="text-center mb-4">Chess Game</h2>
-        <div class="row">
-            <div class="col-md-6 mb-4">
-                <div class="image-grid-item">
-                    <img src="images/chessOne.png" class="img-fluid" alt="Image 1">
-                </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="image-grid-item">
-                    <img src="images/chessTwo.png" class="img-fluid" alt="Image 2">
-                </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="image-grid-item">
-                    <img src="images/chessThree.png" class="img-fluid" alt="Image 3">
-                </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="image-grid-item">
-                    <img src="images/chessFour.png" class="img-fluid" alt="Image 4">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-<section class="image-grid-section py-5">
-    <div class="container">
-        <h2 class="text-center mb-4">Plane Runner Game</h2>
-        <div class="row">
-            <div class="col-md-6 mb-4">
-                <div class="image-grid-item">
-                    <img src="images/PlaneOne.png" class="img-fluid" alt="Image 1">
-                </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="image-grid-item">
-                    <img src="images/PlaneTwo.png" class="img-fluid" alt="Image 2">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+  <!-- Preloader -->
+  <div id="preloader"></div>
 
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
 
-<!-- Footer Section -->
-<footer class="bg-dark text-white py-4">
-    <div class="container">
-        <div class="row align-items-center">
-            <!-- Left Side: Logo -->
-            <div class="col-md-6 text-left">
-                <a href="#" class="navbar-brand text-white">
-                    <img src="images/image1.jpeg" alt="Logo" style="max-width: 150px;">
-                </a>
-            </div>
-            <!-- Right Side: Social Media Links -->
-            <div class="col-md-6 text-right">
-                <a href="#" class="text-white mx-2">
-                    <i class="fab fa-facebook"></i> <!-- Facebook Icon -->
-                </a>
-                <a href="#" class="text-white mx-2">
-                    <i class="fab fa-twitter"></i> <!-- Twitter Icon -->
-                </a>
-                <a href="#" class="text-white mx-2">
-                    <i class="fab fa-linkedin"></i> <!-- LinkedIn Icon -->
-                </a>
-                <a href="#" class="text-white mx-2">
-                    <i class="fab fa-instagram"></i> <!-- Instagram Icon -->
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 text-center mt-3">
-                <p>&copy; 2025 MyCompany. All Rights Reserved.</p>
-            </div>
-        </div>
-    </div>
-</footer>
-
-
-
-
-    <!-- Bootstrap JS and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	
-	
 	<script>
         document.addEventListener('contextmenu', function(e) {
             e.preventDefault();  // Disable right-click menu
@@ -458,4 +928,5 @@
 		}
     </script>
 </body>
+
 </html>

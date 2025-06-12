@@ -90,7 +90,7 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="70">
         <h2>Eagle Game Hub</h2>
-        <p>We are working as a <span class="typed" data-typed-items="Indie Game Developer, Freelancer, Unity 2d/3d Game developer, Unreal Engine Game developer, 3d Artist [Blender]">Indie Game Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <p>I am working as a <span class="typed" data-typed-items="Indie Game Developer, Freelancer, Unity 2d/3d Game developer, Unreal Engine Game developer, 3d Artist [Blender]">Indie Game Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
       </div>
 
     </section><!-- /Hero Section -->
@@ -164,7 +164,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="stats-item">
               <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1" class="purecounter"></span>
               <p><strong>Projects</strong></p>
             </div>
           </div><!-- End Stats Item -->

@@ -89,7 +89,7 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="70">
         <h2>Eagle Game Hub</h2>
-        <p>I am working as a <span class="typed" data-typed-items=" Unity 2d/3d Game developer,Freelancer, Unreal Engine Game developer, 3d Artist [Blender]">Unity 2d / 3d Game Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <p>I am working as a <span class="typed" data-typed-items=" Unity 2d/3d Game developer, Unreal Engine Game developer, 3d Artist [Blender]">Unity 2d / 3d Game Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
       </div>
 
     </section><!-- /Hero Section -->
@@ -138,7 +138,7 @@
     </section><!-- /About Section -->
 
     <!-- Stats Section -->
-    <section id="stats" class="stats section">
+ <!--   <section id="stats" class="stats section">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -180,7 +180,7 @@
 
       </div>
 
-    </section><!-- /Stats Section -->
+    </section>  -->
 
     <!-- Skills Section -->
     <section id="skills" class="skills section light-background">

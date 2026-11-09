@@ -183,7 +183,7 @@
     </section>  -->
 
     <!-- Skills Section -->
-    <section id="skills" class="skills section light-background">
+<!--    <section id="skills" class="skills section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -249,7 +249,7 @@
       </div>
 
     </section><!-- /Skills Section -->
-
+-->
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section light-background">
 
